@@ -5,21 +5,21 @@
 class Bonsai < Formula
   desc "CLI tool for scaffolding Claude Code agent workspaces"
   homepage "https://github.com/LastStep/Bonsai"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/LastStep/Bonsai/releases/download/v0.1.0/bonsai_0.1.0_darwin_amd64.tar.gz"
-      sha256 "df161613bd8cf2474c82d186e54bc4306ab873ef3b3ea85ec4e61129b0c7849b"
+      url "https://github.com/LastStep/Bonsai/releases/download/v0.1.1/bonsai_0.1.1_darwin_amd64.tar.gz"
+      sha256 "1ac7046110608847a8204decd22506afc8b98eb35418e4d855f156c0112ab055"
 
       define_method(:install) do
         bin.install "bonsai"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/LastStep/Bonsai/releases/download/v0.1.0/bonsai_0.1.0_darwin_arm64.tar.gz"
-      sha256 "c06bcac82aab1cfacff9b81bfb9724bb5624c841d7d9a7fc212fa5d7fe87bc44"
+      url "https://github.com/LastStep/Bonsai/releases/download/v0.1.1/bonsai_0.1.1_darwin_arm64.tar.gz"
+      sha256 "555f0081a6a0b83d96f22ca9464300484ff4f71b7e530791504e4708549af2c3"
 
       define_method(:install) do
         bin.install "bonsai"
@@ -29,15 +29,15 @@ class Bonsai < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/LastStep/Bonsai/releases/download/v0.1.0/bonsai_0.1.0_linux_amd64.tar.gz"
-      sha256 "9a041d3cf836e4e9e78958e9bbe6c7d06a98e5903b944d783ed1b477d250799d"
+      url "https://github.com/LastStep/Bonsai/releases/download/v0.1.1/bonsai_0.1.1_linux_amd64.tar.gz"
+      sha256 "15d04c416cff6ff9f6c3035c1c9d2f2336395091f000f62924900c3d0bb0cef4"
       define_method(:install) do
         bin.install "bonsai"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/LastStep/Bonsai/releases/download/v0.1.0/bonsai_0.1.0_linux_arm64.tar.gz"
-      sha256 "b3646b2cd4ce0c8667a8222f461d462e4dbc5b3f318a58b2149691ca2180c2a8"
+      url "https://github.com/LastStep/Bonsai/releases/download/v0.1.1/bonsai_0.1.1_linux_arm64.tar.gz"
+      sha256 "5cb834ad455fa3e4f3a9c3abad38894891631c1d9e6928561f78bc68c0a0b10b"
       define_method(:install) do
         bin.install "bonsai"
       end
